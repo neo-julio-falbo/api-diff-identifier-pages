@@ -4,53 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Polling Micro-SaaS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
+            background-color: #1e1e1e;
+            padding: 1.5rem 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
         }
         section {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        h1, h2 {
-            color: #4CAF50;
+        h2 {
+            color: #ffffff;
+        }
+        ul li {
+            margin: 0.5rem 0;
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
+            padding: 1.5rem;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
             margin-top: 2rem;
         }
-        .cta {
-            text-align: center;
-            margin: 2rem 0;
+        .btn-custom {
+            background-color: #ffffff;
+            color: #121212;
+            text-transform: uppercase;
+            font-weight: bold;
         }
-        .cta a {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background-color: #4CAF50;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        .cta a:hover {
-            background-color: #45a049;
+        .btn-custom:hover {
+            background-color: #e0e0e0;
+            color: #000000;
         }
     </style>
 </head>
@@ -68,7 +70,7 @@
 
     <section>
         <h2>Key Features</h2>
-        <ul>
+        <ul class="browser-default">
             <li>Dynamic API polling intervals</li>
             <li>Change detection using CRC32 and JSON diffing</li>
             <li>Configurable rate limits</li>
@@ -77,13 +79,15 @@
         </ul>
     </section>
 
-    <section class="cta">
+    <section class="center-align">
         <h2>Explore the Code</h2>
-        <a href="https://github.com/your-repository-link" target="_blank">View on GitHub</a>
+        <a href="https://github.com/your-repository-link" target="_blank" class="btn btn-custom waves-effect waves-light">View on GitHub</a>
     </section>
 
     <footer>
         <p>&copy; 2025 API Polling Micro-SaaS. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
